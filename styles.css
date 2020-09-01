@@ -260,13 +260,12 @@ h3 {
 
 .tip {
   visibility: hidden;
-  min-width: 150px;
+  min-width: 200px;
   position: absolute;
   z-index: 1;
   right: calc(100% + 50px);
   background: var(--secondarybackground);
   border-radius: 10px;
-  padding: 0.5rem;
   font-weight: 600;
   color: var(--textcolor);
   border: 1px solid var(--textcolor);

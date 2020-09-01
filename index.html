@@ -6,7 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Share&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <title>Sciculator</title>
+  <title>Sci-Calculator</title>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+  </script>
 
 </head>
 
@@ -15,7 +19,7 @@
     <div class="nav">
       <img src="menu.svg" width="24px" height="24px" id="menu" />
 
-      <h1 class="brand">SCalculator</h1>
+      <h1 class="brand">Sci-Calculator</h1>
       <div class="darkmode">
         <p>Darkmode</p>
         <input type="checkbox" class="mode" id="darkmode" />
@@ -86,7 +90,7 @@
         <h3>Gravity</h3>
         <div class="tooltip">
           ?
-          <div class="tip">F = G m1 X m2 / r<sup>2</sup></div>
+          <div class="tip">$$ F = {G {m1 * m2 \over r^2}} $$</div>
         </div>
       </div>
       <div class="inputs">
@@ -115,7 +119,7 @@
         <h3>Weight</h3>
         <div class="tooltip">
           ?
-          <div class="tip">F = m X g<sup>2</sup></div>
+          <div class="tip">$$ w = {m * g} $$</div>
         </div>
       </div>
       <div class="inputs">
@@ -125,7 +129,7 @@
         </div>
         <div class="single-input">
           <input type="text" value="" placeholder="Result" class="result" disabled="true"></input>
-          <p class="unit">N</p>
+          <p class="unit">kg</p>
         </div>
       </div>
 
@@ -136,7 +140,7 @@
         <h3>Force</h3>
         <div class="tooltip">
           ?
-          <div class="tip">F = G m1 X m2 / r<sup>2</sup></div>
+          <div class="tip">$$ F = {m * a} $$</div>
         </div>
       </div>
       <div class="inputs">
@@ -161,7 +165,7 @@
         <h3>acceleration</h3>
         <div class="tooltip">
           ?
-          <div class="tip">F = G m1 X m2 / r<sup>2</sup></div>
+          <div class="tip">$$ a = {{v - u} \over t }$$</div>
         </div>
       </div>
       <div class="inputs">
@@ -190,7 +194,7 @@
         <h3>AverageSpeed</h3>
         <div class="tooltip">
           ?
-          <div class="tip">F = G m1 X m2 / r<sup>2</sup></div>
+          <div class="tip">$$ S = {d \over t} $$</div>
         </div>
       </div>
       <div class="inputs">
@@ -215,7 +219,7 @@
         <h3>Drag</h3>
         <div class="tooltip">
           ?
-          <div class="tip">F = G m1 X m2 / r<sup>2</sup></div>
+          <div class="tip">$$ F = {1\over2}{\rho * C * A v^2} $$</div>
         </div>
       </div>
       <div class="inputs">
@@ -239,7 +243,7 @@
         <h3>Density</h3>
         <div class="tooltip">
           ?
-          <div class="tip">F = G m1 X m2 / r<sup>2</sup></div>
+          <div class="tip">$$ D = {m \over V} $$</div>
         </div>
       </div>
       <div class="inputs">
@@ -263,7 +267,7 @@
         <h3>Pressure</h3>
         <div class="tooltip">
           ?
-          <div class="tip">F = G m1 X m2 / r<sup>2</sup></div>
+          <div class="tip">$$ P = {f \over m} $$</div>
         </div>
       </div>
       <div class="inputs">
@@ -273,11 +277,11 @@
         </div>
         <div class="single-input">
           <input type="text" value="" placeholder="Area"></input>
-          <p class="unit">m<sup>2</sup><sup>3</sup></p>
+          <p class="unit">m<sup>2</sup></p>
         </div>
         <div class="single-input">
           <input type="text" value="" placeholder="Result" class="result" disabled="true"></input>
-          <p class="unit">Nm<sup>-2</sup> or Pa</p>
+          <p class="unit">Nm<sup>-2</sup></p>
         </div>
       </div>
     </div>
@@ -286,7 +290,7 @@
         <h3>Work</h3>
         <div class="tooltip">
           ?
-          <div class="tip">W = F X d<sup>2</sup></div>
+          <div class="tip">$$ W = f * d $$</div>
         </div>
       </div>
       <div class="inputs">
@@ -327,6 +331,9 @@
 
 
   <script src="index.js"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+
 </body>
 
 </html>
